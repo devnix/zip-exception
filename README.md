@@ -13,6 +13,8 @@ composer install
 ```php
 <?php
 
+use Devnix\ZipException\ZipException;
+
 $zip = new ZipArchive();
 
 if (!$zipStatus = $zip->open($tmpZip)) {
